@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;900&');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #333;
+    color: white;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.text-highlight {
+    font-weight: 900;
+}
+
+.page-highlight {
+    font-size: 48px;
+}
+
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+section {
+    position: relative;
+    padding: 5%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.column-section {
+    flex-direction: column;
+    align-items: start;
+}
+
+h3 {
+    margin: 0;
+}
+
+.section-content {
+    height: 80%;
+    max-width: 500px;
+    height: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+
+.align-left{
+    align-items: end;
+}
+
+@media screen and (min-width: 500px) {
+    .page-highlight {
+        font-size: 64px;
+        max-width: 750px;
+    }
+}
+
+
+
+/* *************** menu superior ********************** */
+nav {
+    height: 75px;
+    flex-shrink: 0;
+    background: #F88F58;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+
+a {
+    font-weight: 900;
+    color: #333;
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu-button {
+    display: none;
+    color: #333;
+    fill: #333;
+}
+
+@media screen and (min-width: 500px) {
+    #menu-button {
+        display: none;
+    }
+    
+    #menu {
+        /* display: flex; */
+        display: none;
+        width: auto;
+        margin-right: 5%;
+        gap: 20px;
+    }
+}
+
+/* ******************* primeira parte ******************* */
+
+.content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5px;
+}
+.content-item div {
+    gap: 10px;
+}
+
+.content-item .material-symbols-outlined {
+    font-size: 50px;
+}
+
+section.main-content {
+    position: relative;
+    padding: 1em 5%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    background-color: #222;
+}
+
+.main-content section{
+    height: 65vh;
+}
+.main-content .column-section{
+    box-shadow: none;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
