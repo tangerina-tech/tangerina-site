@@ -69,6 +69,10 @@ h3 {
     align-items: end;
 }
 
+.auto-height{
+    height: auto;
+}
+
 @media screen and (min-width: 500px) {
     .page-highlight {
         font-size: 64px;
