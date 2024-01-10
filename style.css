@@ -191,7 +191,7 @@ footer{
         height: 60%;
         z-index: 0;
         opacity: 0.15;
-        max-width: 600px;
+        max-height: 700px;
     }
     .image-left{
         left: 10%;
