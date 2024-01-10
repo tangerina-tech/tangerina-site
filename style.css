@@ -52,8 +52,6 @@ h3 {
 .section-content {
     height: 80%;
     max-width: 500px;
-    height: 80%;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,9 +63,6 @@ h3 {
     text-align: center;
 }
 
-.align-left{
-    align-items: end;
-}
 
 .auto-height{
     height: auto;
@@ -76,7 +71,7 @@ h3 {
 @media screen and (min-width: 500px) {
     .page-highlight {
         font-size: 64px;
-        max-width: 750px;
+        max-width: 900px;
     }
 }
 
@@ -153,6 +148,9 @@ section.main-content {
 }
 .main-content .column-section{
     box-shadow: none;
+
+    max-width: 1000px;
+    margin: auto;
 }
 
 footer{
@@ -161,4 +159,41 @@ footer{
     justify-content: center;
     height: 100px;
     background-color: #222;
+}
+
+.align-left{
+    align-items: end;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.section-image{
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+    .section-image{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        height: 60%;
+        z-index: 0;
+        opacity: 0.15;
+    }
+    .image-left{
+        left: 0;
+
+    }
+}
+@media screen and (min-width: 1050px) {
+    .section-image{
+        display: flex;
+        position: absolute;
+        top: 25%;
+        height: 60%;
+        z-index: 0;
+        opacity: 1;
+    }
 }
