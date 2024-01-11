@@ -55,7 +55,7 @@ h3 {
 
 .section-content {
     height: 80%;
-    max-width: 500px;
+    /* max-width: 500px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,21 +200,23 @@ footer{
         position: absolute;
         right: 0;
         top: 25%;
-        height: 60%;
         z-index: 0;
         opacity: 0.15;
-        max-height: 700px;
+        max-width: 45%;
     }
     .image-left{
-        left: 10%;
+        left: 5%;
+        max-width: 40%;
     }
 }
 @media screen and (min-width: 1050px) {
+    .section-content{
+        max-width: 48%;
+    }
     .section-image{
         display: flex;
         position: absolute;
         top: 25%;
-        height: 70%;
         z-index: 0;
         opacity: 1;
     }
