@@ -219,3 +219,21 @@ footer{
         opacity: 1;
     }
 }
+
+#wpp-button{
+    position: fixed;
+    z-index: 1000;
+    background-color: #25d366;
+    bottom: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: #222;
+}
