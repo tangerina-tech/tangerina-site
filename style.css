@@ -206,7 +206,7 @@ footer{
     }
     .image-left{
         left: 5%;
-        max-width: 40%;
+        max-width: 38%;
     }
 }
 @media screen and (min-width: 1050px) {
@@ -218,7 +218,7 @@ footer{
         position: absolute;
         top: 25%;
         z-index: 0;
-        opacity: 1;
+        opacity: 0.6;    
     }
 }
 
