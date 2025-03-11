@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;700;900&');
-body {
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, input, button{
+    font-family: 'Urbanist', sans-serif;
+}
+    body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Urbanist', sans-serif;
     background-color: #efefef;
     color: #333;
     font-weight: 300;
-    overflow: hidden;
-    position: fixed;
+    overflow-x: hidden;
+    /* overflow: hidden;
+    position: fixed; */
 }
 
 .background-img {
@@ -22,199 +31,6 @@ body {
     opacity: 0.7;
 }
 
-/* 
-
-.text-highlight {
-    font-weight: 700;
-    color: #F88F58;
-}
-
-.page-highlight {
-    font-size: 48px;
-}
-.page-subtitle{
-    font-size: 24px;
-}
-
-.bg {
-    display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-section {
-    position: relative;
-    padding: 5%;
-    height: 65vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
-
-}
-
-.column-section {
-    flex-direction: column;
-    align-items: start;
-}
-
-h3 {
-    margin: 0;
-}
-
-.section-content {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.section-title {
-    font-weight: 900;
-    width: 100%;
-    font-size: 64px;
-}
-
-
-.auto-height{
-    height: auto;
-}
-
-
-.button{
-    height: 4em;
-    flex-shrink: 0;
-    border-radius: 100px;
-    background: #F88F58;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #222;
-    font-size: 18px;
-    padding: 0 2em;
-}
-
-nav {
-    height: 75px;
-    flex-shrink: 0;
-    background: #F88F58;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-    align-items: center;
-}
-
-
-#menu {
-    display: none;
-}
-
-#menu-button {
-    display: none;
-    color: #333;
-    fill: #333;
-}
-
-@media screen and (min-width: 500px) {
-    #menu-button {
-        display: none;
-    }
-    
-    #menu {
-        display: none;
-        width: auto;
-        margin-right: 5%;
-        gap: 20px;
-    }
-}
-
-
-.content-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 5px;
-}
-.content-item div {
-    gap: 10px;
-}
-
-.content-item p{
-    line-height: 2em;
-    font-size: 18px;
-}
-
-.content-item .material-symbols-outlined {
-    font-size: 50px;
-}
-
-section.main-content {
-    position: relative;
-    padding: 1em 5%;
-    height: auto;
-    display: block;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
-    background-color: #222;
-}
-
-.main-content section{
-    height: auto;
-}
-.main-content .column-section{
-    box-shadow: none;
-
-    max-width: 1400px;
-    margin: auto;
-}
-
-.align-left{
-    align-items: end;
-}
-.justify-center{
-    justify-content: center;
-}
-
-.section-image{
-    display: none;
-    max-width: 600px;
-}
-
-@media screen and (min-width: 500px) {
-    .section-image{
-        display: flex;
-        position: absolute;
-        right: 0;
-        top: 25%;
-        z-index: 0;
-        opacity: 0.15;
-        max-width: 45%;
-    }
-    .image-left{
-        left: 5%;
-        max-width: 38%;
-    }
-}
-@media screen and (min-width: 1050px) {
-    .section-content{
-        max-width: 48%;
-    }
-    .section-image{
-        display: flex;
-        position: absolute;
-        top: 25%;
-        z-index: 0;
-        opacity: 0.6;    
-    }
-}
-
-
-*/
 a {
     font-weight: 900;
     color: #333;
@@ -224,11 +40,11 @@ a {
     position: fixed;
     z-index: 1000;
     background-color: #25d366;
-    bottom: 5%;
-    right: 5%;
-    width: 60px;
-    height: 60px;
-    font-size: 36px;
+    bottom: 1em;
+    right: .5em;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
     color: white;
     text-align: center;
     display: flex;
@@ -242,14 +58,32 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
-    padding: 2em 10%;
+}
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 64px;
+    position: fixed;
+    width: 100vw;
+
+}
+nav div{
+    display: flex;
+    gap: 16px;
+}
+nav div a:hover{
+    color: orangered;
 }
 
-main .logo{
+nav .logo{
     /* width: 90%; */
-    max-width: 600px;
+    max-width: 150px;
     height: auto;
+}
+nav a{
+    color: #efefef;
 }
 
 main h1{
@@ -257,7 +91,57 @@ main h1{
     margin:  0;
     font-weight: 900;
     font-family: "DM Serif Text";
+    padding-bottom: 32px;
 } 
+main .button{
+    font-family: "DM Serif Text";
+    width: 200px;
+    height: 3em;
+    border: none;
+    border-radius: 50px;
+    color: #efefef;
+    cursor: pointer;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+main .button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0);
+    /* background-color: orange; */
+}
+main h2{
+    font-size: 32px;
+}
+main h2, main h3{
+    font-family: "DM Serif Text";
+
+}
+main section{
+    height: 100vh;
+    width: 100vw;
+    padding: 2em 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main section:not(:first-child){
+    align-items: center;
+    justify-content: space-around;
+    background-color: #efefef;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);   
+}
+i{
+    font-size: 92px;
+}
+#contato{
+    justify-content: center;
+
+}
 footer{
     display: flex;
     align-items: center;
@@ -267,22 +151,44 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100vw;
+    color: #efefef;
 }
 
 
 @media screen and (min-width: 500px) {
+    main{
+        width: 50vw;
+    }
     main h1{
-        font-size: 84px;
+        font-size: 82px;
     } 
-
+    
     .background-img {
         width: 100vw;
         height: auto;
     }
-
+    
     body{
         width: 100%;
         height: 100%;
     }
     
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 50vh;
+        gap: 64px;
+    }
+    .content article{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+        background-color: #333;
+        border-radius: 8px;
+        color: #efefef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        gap: 32px;
+    }
 }
