@@ -173,7 +173,20 @@ footer{
 }
 
 
+nav{
+    justify-content: center;
+}
+nav div a{
+    display: none;
+}
+
 @media screen and (min-width: 500px) {
+    nav{
+        justify-content: space-between;
+    }
+    nav div a{
+        display: flex;
+    }
     main{
         width: 50vw;
     }
